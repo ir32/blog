@@ -1,12 +1,12 @@
 <template>
   <div>
     <h1>Employee List</h1>
-    <button @click="openAddForm">Add List</button>
+    <button @click="openAddForm">Add Employee</button>
 
     <div v-if="showAddForm" class="modal">
       <div class="modal-content">
         <span class="close" @click="closeAddForm">&times;</span>
-        <h2>Add New Employee</h2>
+        <h2>Add  Employee</h2>
         <form @submit.prevent="addEmployee">
           <label>Name:</label>
           <input type="text" v-model="newEmployee.name" required><br><br>
